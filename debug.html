@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><title>DEBUG</title></head>
+<body>
+<h1>DEBUG PAGE</h1>
+<div id="out">checking...</div>
+<script>
+document.getElementById('out').textContent = 'inline ok';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+document.getElementById('out').textContent += ' / THREE: ' + typeof THREE;
+</script>
+<script src="parts-data.js"></script>
+<script>
+document.getElementById('out').textContent += ' / PARTS_DB: ' + typeof PARTS_DB;
+</script>
+<script src="mech-builder.js"></script>
+<script>
+document.getElementById('out').textContent += ' / buildMech: ' + typeof buildMech;
+</script>
+</body></html>
